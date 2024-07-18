@@ -298,12 +298,17 @@ button {
 
 /*=========== About ===========*/
 .about {
-    margin-top: 207px;
+    margin-top: 138px;
 }
 
 .about__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about__media {
+    position: relative;
 }
 
 .about__label {
@@ -353,10 +358,74 @@ button {
 
 .about__check-item::after {
     position: absolute;
-    top: 4px;
+    top: 3px;
     left: 3px;
     content: url(../icon/check.svg);
+}
 
+.about__card {
+    position: absolute;
+    top: 165px;
+    left: 0;
+    width: 136px;
+    padding: 30px 26px;
+    text-align: center;
+    border-radius: 10px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+
+.about__card-title {
+    color: #fff;
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1; /* 100% */
+}
+
+.about__card-desc {
+    margin-top: 14px;
+    color: #c6f4f9;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.43;
+}
+
+.about__card-decor {
+    position: absolute;
+    top: -40px;
+    right: -32px;
+}
+
+.about__img-wrap {
+    margin-left: auto;
+    position: relative;
+    width: 494px;
+}
+
+.about__img-wrap::after {
+    position: absolute;
+    inset: auto 0 0 0;
+    z-index: -1;
+    content: "";
+    width: 494px;
+    height: 336px;
+    display: inline-block;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+}
+
+.about__img {
+    display: block;
+    margin: 0px auto;
+    width: 450px;
+}
+
+.about__media-decor {
+    position: absolute;
+    top: 157px;
+    right: -51px;
+    z-index: -1;
 }
 
 /*===========  ===========*/
