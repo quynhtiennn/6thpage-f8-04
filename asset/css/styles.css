@@ -489,7 +489,7 @@ button {
 
 .tab__list {
     position: relative;
-    display: flex;
+    display: inline-flex;
     gap: 56px;
 }
 
@@ -568,7 +568,75 @@ button {
     height: 1.5px;
 }
 
-/*===========  ===========*/
+/*=========== Service ===========*/
+.service {
+    margin-top: 190px;
+    padding: 68px 0px 100px;
+    background: #fff6ed;
+}
+
+.service__desc {
+    margin-bottom: 15px;
+    color: #5e6085;
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.service__top {
+    text-align: center;
+}
+
+.service__body {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.service-item {
+    width: 294px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #fff;
+}
+
+.service-item + .service-item {
+    margin-top: 24px;
+}
+
+.service-item__heading {
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.service-item__more {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 24px;
+    color: #34396a;
+    font-family: Sora, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.service-item__more::after {
+    content: url(../icon/arrow-up-right.svg);
+    margin: 1px 0 0 5px;
+
+}
 /*===========  ===========*/
 /*===========  ===========*/
 /*===========  ===========*/
