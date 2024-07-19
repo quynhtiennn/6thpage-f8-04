@@ -623,7 +623,7 @@ button {
     width: 2.25px;
     height: 22px;
     border-radius: 1px;
-    background: linear-gradient(180deg, #FF5B2E 0.39%, #FFA187 100.29%);
+    background: linear-gradient(180deg, #ff5b2e 0.39%, #ffa187 100.29%);
 }
 
 .service-item__desc {
@@ -686,7 +686,86 @@ button {
     color: #ff5b2e;
     border-color: currentColor;
 }
-/*===========  ===========*/
+
+/*=========== Staff ===========*/
+.staff {
+    padding: 130px 0;
+}
+
+.staff__desc {
+    color: #5e6085;
+    text-align: center;
+    font-family: Sora;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.staff__heading {
+    text-align: center;
+}
+
+.staff__list {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.staff-item__img-wrap {
+    position: relative;
+    margin: 0px 16px;
+    border-radius: 130px;
+    overflow: hidden;
+}
+
+.staff-item__img-wrap::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 266px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff-item__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.staff-item__title {
+    margin-top: 34px;
+    color: #656689;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.staff-item__name {
+    margin-top: 24px;
+    color: #000958;
+    text-align: center;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.staff__cta-wrap {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.staff__cta-btn {
+    min-width: 193px;
+    color: #ff5b2e;
+    border-color: currentColor;
+}
+
 /*===========  ===========*/
 /*===========  ===========*/
 /*===========  ===========*/
