@@ -70,9 +70,9 @@ button {
 }
 
 .btn--primary {
-    color: #fff;
-    background: var(--primary-orange-color);
-    border-color: var(--primary-orange-color);
+    color: #fff !important;
+    background: var(--primary-orange-color) !important;
+    border-color: var(--primary-orange-color) !important;
 }
 
 .btn__icon {
@@ -893,8 +893,85 @@ button {
     position: absolute;
     top: -10px;
     right: -112px;
-    
 }
+
+.pricing__list {
+    width: 994px;
+    margin: 56px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 44px;
+}
+
+.pricing-item {
+    padding: 30px 28px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.pricing-item:nth-child(2) {
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+
+.pricing-item_type {
+    color: #ff5b2e;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.pricing-item__heading {
+    margin-top: 8px;
+    color: #3f4065;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.pricing-item__price {
+    margin: 24px 0 22px;
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.pricing-item__item {
+    display: flex;
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.pricing-item__item::before {
+    content: url(../icon/pricing-check.svg);
+    margin-right: 14px;
+}
+
+.pricing-item__item--disable::before {
+    opacity: 0.4;
+}
+
+.pricing-item__btn {
+    --height: 44px;
+
+    width: 100%;
+    color: #ff5b2e;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1;
+    background: transparent;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+}
+
 /*===========  ===========*/
 /*===========  ===========*/
 /*===========  ===========*/
