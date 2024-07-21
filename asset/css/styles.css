@@ -1006,15 +1006,89 @@ button {
 .review-item {
     display: flex;
     align-items: center;
+    gap: 115px;
 }
 
 .review-item__media {
+    position: relative;
     flex-shrink: 0;
     width: 274px;
+    border-radius: 137px;
+}
+
+.review-item__media::after {
+    position: absolute;
+    content: "";
+    height: 82%;
+    background: #ffda54;
+    inset: auto 0 0 0;
+    border-radius: inherit;
 }
 
 .review-item__img {
+    display: block;
+    position: relative;
+    z-index: 1;
     width: 100%;
+    border-radius: inherit;
+}
+
+.review-item__content {
+    padding-top: 50px;
+}
+
+.review-item__quote {
+    width: 553px;
+    margin: 24px 0px 34px;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+.review-item__author {
+    position: relative;
+    padding-left: 28px;
+    color: #282828;
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.review-item__author::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    border-radius: 2px;
+}
+
+.review__dots {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.review__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #ff5b2e;
+}
+
+.review__dot:hover {
+    background: #ff5b2e;
+    cursor: pointer;
+}
+
+.review__dot--active {
+    width: 24px;
+    background: #ff5b2e;
 }
 
 /*===========  ===========*/
